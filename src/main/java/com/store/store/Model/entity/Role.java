@@ -19,7 +19,7 @@ import lombok.experimental.SuperBuilder;
 public class Role extends BaseEntity {
 
     @Column(name = "name", nullable = false, unique = true, length = 50)
-    private Long roleId;
+    private String name;
 
     @Column(name = "description")
     private String description;
