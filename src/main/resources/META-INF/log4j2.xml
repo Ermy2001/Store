@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <!-- این بخش میگه لاگ‌ها رو کجا نشون بده (کنسول) -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <!-- این بخش میگه چه سطحی از لاگ‌ها رو نشون بده -->
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+        </Root>
+
+        <!-- (اختیاری) اگر میخوای لاگ‌های اسپرینگ یا فریم‌ورک‌های دیگه رو هم ببینی، میتونی اینا رو باز کنی -->
+        <!--
+        <Logger name="org.apache" level="warn" />
+        <Logger name="com.day2" level="debug" />
+        -->
+    </Loggers>
+</Configuration>

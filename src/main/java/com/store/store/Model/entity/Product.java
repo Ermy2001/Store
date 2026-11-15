@@ -23,9 +23,6 @@ public class Product extends BaseEntity {
   @Column(name = "name", nullable = false, length = 200)
   private String name;
 
-  @Column(name = "description", columnDefinition = "TEXT")
-  private String description;
-
   @Column(name = "price", nullable = false, precision = 10, scale = 2)
   private BigDecimal price;
 
